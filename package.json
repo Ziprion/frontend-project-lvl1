@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Ziprion/frontend-project-lvl1#readme",
   "dependencies": {
-    "link": "^0.1.5"
+    "link": "^0.1.5",
+    "readline-sync": "^1.4.10"
   }
 }
