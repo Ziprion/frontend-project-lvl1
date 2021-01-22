@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Ziprion/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/Ziprion/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/Ziprion/frontend-project-lvl1#readme",
+  "dependencies": {
+    "link": "^0.1.5"
+  }
 }
