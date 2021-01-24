@@ -11,16 +11,16 @@ const round = () => {
   const newArray = (number, count = 0) => {
     const newCount = count;
     const start = number;
-    if (newCount === 10) { return; }
+    if (newCount === 10) { return arrayOfQ; }
     arrayOfQ.push(start);
     const newStart = start + rProg;
     const newNewCount = newCount + 1;
     return newArray(newStart, newNewCount);
-  }
+  };
   newArray(startNumber);
   const numberOfHide = Math.floor(Math.random() * 10);
   const even = arrayOfQ[numberOfHide];
-  arrayOfQ[numberOfHide] = '..'; 
+  arrayOfQ[numberOfHide] = '..';
   console.log(`Question: ${arrayOfQ}`);
   const userAnswer = readlineSync.question('Your answer: ');
   const positiveReturn = 'Correct!';

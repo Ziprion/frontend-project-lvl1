@@ -7,10 +7,9 @@ console.log('Find the greatest common divisor of given numbers.');
 const round = () => {
   const numberOne = Math.round(Math.random() * 100) + 1;
   const numberTwo = Math.round(Math.random() * 100) + 1;
-  const numberOfOperator = Math.floor(Math.random() * 3);
   console.log(`Question: ${numberOne} ${numberTwo}`);
   const userAnswer = readlineSync.question('Your answer: ');
-  const fnGcd = (a, b) => b === 0 ? a : fnGcd(b, a % b);
+  const fnGcd = (a, b) => (b === 0 ? a : fnGcd(b, a % b));
   const even = fnGcd(numberOne, numberTwo);
   const positiveReturn = 'Correct!';
   const negativeReturn = `'${userAnswer}' is wrong answer ;(. Correct answer was '${even}'.`;
