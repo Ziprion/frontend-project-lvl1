@@ -22,8 +22,9 @@ const round = () => {
   arrayOfQ[numberOfHide] = '..';
   let question = '';
   for (let i = 0; i < arrayOfQ.length; i += 1) {
-    question = question + ' ' + arrayOfQ[i];
-  };
+    const q = ` ${arrayOfQ[i]}`;
+    question += q;
+  }
   console.log(`'Question:${question}'`);
   const userAnswer = readlineSync.question('Your answer: ');
   const positiveReturn = 'Correct!';
