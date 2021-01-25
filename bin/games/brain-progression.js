@@ -20,7 +20,11 @@ const round = () => {
   const numberOfHide = Math.floor(Math.random() * 10);
   const even = arrayOfQ[numberOfHide];
   arrayOfQ[numberOfHide] = '..';
-  console.log(`Question: ${arrayOfQ}`);
+  let question = '';
+  for (let i = 0; i < arrayOfQ.length; i += 1) {
+    question = question + ' ' + arrayOfQ[i];
+  };
+  console.log(`Question: ${question}`);
   const userAnswer = readlineSync.question('Your answer: ');
   const positiveReturn = 'Correct!';
   const negativeReturn = `'${userAnswer}' is wrong answer ;(. Correct answer was '${even}'.`;
