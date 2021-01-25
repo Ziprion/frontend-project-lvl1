@@ -24,7 +24,7 @@ const round = () => {
   for (let i = 0; i < arrayOfQ.length; i += 1) {
     question = question + ' ' + arrayOfQ[i];
   };
-  console.log(`Question: ${question}`);
+  console.log(`'Question: ${question}'`);
   const userAnswer = readlineSync.question('Your answer: ');
   const positiveReturn = 'Correct!';
   const negativeReturn = `'${userAnswer}' is wrong answer ;(. Correct answer was '${even}'.`;
