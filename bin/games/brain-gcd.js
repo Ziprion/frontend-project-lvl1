@@ -6,7 +6,7 @@ const mainTask = 'Find the greatest common divisor of given numbers.';
 const round = () => {
   const numberOne = Math.floor(Math.random() * 100) + 1;
   const numberTwo = Math.floor(Math.random() * 100) + 1;
-  console.log(`Question: ${numberOne} ${numberTwo}`);
+  console.log(`'Question: ${numberOne} ${numberTwo}'`);
   const userAnswer = readlineSync.question('Your answer: ');
   const fnGcd = (a, b) => (b === 0 ? a : fnGcd(b, a % b));
   const even = fnGcd(numberOne, numberTwo);

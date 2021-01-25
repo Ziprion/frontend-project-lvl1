@@ -9,7 +9,7 @@ const round = () => {
   const numberOfOperator = Math.floor(Math.random() * 3);
   const operators = ['-', '+', '*'];
   const operator = operators[numberOfOperator];
-  console.log(`Question: ${numberOne} ${operator} ${numberTwo}`);
+  console.log(`'Question: ${numberOne} ${operator} ${numberTwo}'`);
   const userAnswer = readlineSync.question('Your answer: ');
   const even = [];
   even[0] = numberOne - numberTwo;

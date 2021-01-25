@@ -13,7 +13,7 @@ const round = () => {
     return 'yes';
   };
   const even = evenNumber(numberNew);
-  console.log(`Question: ${numberNew}`);
+  console.log(`'Question: ${numberNew}'`);
   const userAnswer = readlineSync.question('Your answer: ');
   const positiveReturn = 'Correct!';
   const negativeReturn = `'${userAnswer}' is wrong answer ;(. Correct answer was '${even}'.`;

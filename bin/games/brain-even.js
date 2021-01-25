@@ -6,7 +6,7 @@ const mainTask = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.
 const round = () => {
   const number = Math.floor(Math.random() * 100) + 1;
   const rightAnswer = number % 2 === 0 ? 'yes' : 'no';
-  console.log(`Question: ${number}`);
+  console.log(`'Question: ${number}'`);
   const userAnswer = readlineSync.question('Your answer: ');
   const ifRightAnswer = 'Correct!';
   const ifWrongAnswer = `'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`;
