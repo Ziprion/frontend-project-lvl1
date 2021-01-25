@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import greeting from '../src/cli.js';
+import startGame from '../../src/index.js';
 
-const userName = greeting();
-console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+const mainTask = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const round = () => {
   const numberNew = Math.round(Math.random() * 100) + 1;
   const evenNumber = (number) => {
@@ -22,16 +21,4 @@ const round = () => {
   console.log(resultRound === 1 ? positiveReturn : negativeReturn);
   return resultRound;
 };
-const game = (count) => {
-  let countWin = count;
-  if (countWin === 3) {
-    return console.log(`Congratulations, ${userName}!`);
-  }
-  const score = round();
-  if (score === 0) {
-    return console.log(`Let's try again, ${userName}!`);
-  }
-  countWin += 1;
-  return game(countWin);
-};
-game(0);
+startGame(mainTask, round);

@@ -3,16 +3,16 @@ publish:
 install:
 	npm install
 brain-games:
-	node bin/brain-games
+	node bin/brain-games.js
 brain-even:
-	node bin/brain-even
+	node bin/games/brain-even
 brain-calc:
-	node bin/brain-calc
+	node bin/games/brain-calc
 brain-gcd:
-	node bin/brain-gcd
+	node bin/games/brain-gcd
 brain-progression:
-	node bin/brain-progression
+	node bin/games/brain-progression
 brain-prime:
-	node bin/brain-prime.js
+	node bin/games/brain-prime
 make lint:
 	npx eslint .
